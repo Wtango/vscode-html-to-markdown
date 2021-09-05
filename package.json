@@ -8,9 +8,9 @@
 		"email": "wuyangtang@live.com",
 		"url": "https://www.wtango.com"
 	},
-	"publisher": "Yangtang Wu",
+	"publisher": "YangtangWu",
 	"engines": {
-		"vscode": "^1.0.0"
+		"vscode": "^1.60.0"
 	},
 	"categories": [
 		"Other"

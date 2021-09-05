@@ -26,8 +26,12 @@ export class Html2MarkdownPreviewer {
     }
 
     private async showInNewEditor(content: string): Promise<void> {
-        const doc = await vscode.workspace.openTextDocument({ language: 'markdown', content });
-        // navigate to the new text document containing the markdown content
-        vscode.commands.executeCommand('vscode.open', doc.uri);
+        try {
+            const doc = await vscode.workspace.openTextDocument({ language: 'markdown', content });
+            // navigate to the new text document containing the markdown content
+            vscode.commands.executeCommand('vscode.open', doc.uri);
+        } catch (err) {
+            console.error(err);
+        }
     }
 }
