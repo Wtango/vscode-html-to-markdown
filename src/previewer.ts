@@ -15,23 +15,23 @@ export class Html2MarkdownPreviewer {
         log('Html2MarkdownPreviewer is created.');
     }
 
-    showPreviewer() {
-        if (!vscode.window.activeTextEditor) {
-            vscode.window.showWarningMessage('There is no active editor');
-        } else {
-            const currentText = vscode.window.activeTextEditor.document.getText();
-            const md = this.turndown.turndown(currentText);
-            this.showInNewEditor(md);
+    public async showPreviewer(): Promise<void> {
+        try {
+            if (!vscode.window.activeTextEditor) {
+                vscode.window.showWarningMessage('There is no active editor');
+            } else {
+                const currentText = vscode.window.activeTextEditor.document.getText();
+                const md = this.turndown.turndown(currentText);
+                await this.showInNewEditor(md);
+            }
+        } catch (err) {
+            log(JSON.stringify(err));
         }
     }
 
     private async showInNewEditor(content: string): Promise<void> {
-        try {
-            const doc = await vscode.workspace.openTextDocument({ language: 'markdown', content });
-            // navigate to the new text document containing the markdown content
-            vscode.commands.executeCommand('vscode.open', doc.uri);
-        } catch (err) {
-            console.error(err);
-        }
+        const doc = await vscode.workspace.openTextDocument({ language: 'markdown', content });
+        // navigate to the new text document containing the markdown content
+        vscode.commands.executeCommand('vscode.open', doc.uri);
     }
 }

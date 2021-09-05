@@ -14,6 +14,14 @@ Press `F1` or `Ctrl + Shift + p` or `Cmd + Shift + p`(macOS) to open command pal
 
 Initial release of HTML to Markdown extendsion
 
+### 1.0.1
+
+Add changelog
+
+### 1.0.2
+
+Bug fix
+
 -----------------------------------------------------------------------------------------------------------
 
 **Enjoy!**

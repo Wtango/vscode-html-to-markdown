@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.2]
+- Add error handling when execute command
+
 ## [1.0.1]
 - Add changelog and rebuild the extendsion
 
