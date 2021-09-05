@@ -2,7 +2,7 @@
 	"name": "html-to-markdown",
 	"displayName": "HTML to Markdown",
 	"description": "Convert HTML snippet to markdown",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"author": {
 		"name": "Yangtang Wu",
 		"email": "wuyangtang@live.com",
@@ -31,7 +31,7 @@
 		"vscode:prepublish": "yarn run package",
 		"compile": "webpack",
 		"watch": "webpack --watch",
-		"package": "webpack --mode production --devtool hidden-source-map",
+		"package": "webpack --devtool hidden-source-map",
 		"test-compile": "tsc -p ./",
 		"test-watch": "tsc -watch -p ./",
 		"pretest": "yarn run test-compile && yarn run lint",
