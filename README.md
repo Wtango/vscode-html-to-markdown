@@ -2,6 +2,9 @@
 
 `HTML to Markdown` extendsion convert HTML code snippet to markdown.
 
+## Install
+Install `HTML to Markdown` from marketplace: [HTML to Markdown](https://marketplace.visualstudio.com/items?itemName=YangtangWu.html-to-markdown)
+
 ## Usage
 There is one available command:
 * `HTML to Markdown`: convert current opened editor HTML code snippet to Markdown and open a new tab.
@@ -13,22 +16,6 @@ Press `F1` or `Ctrl + Shift + p` or `Cmd + Shift + p`(macOS) to open command pal
 ### 1.0.0
 
 Initial release of HTML to Markdown extendsion
-
-### 1.0.1
-
-Add changelog
-
-### 1.0.2
-
-Bug fix
-
-### 1.0.3
-
-Add more error log
-
-### 1.0.4
-
-Fix extendsion error in production mode
 
 -----------------------------------------------------------------------------------------------------------
 
