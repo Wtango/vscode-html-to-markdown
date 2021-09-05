@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.3]
+- Add add more error info
+
 ## [1.0.2]
 - Add error handling when execute command
 

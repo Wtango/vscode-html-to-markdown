@@ -25,7 +25,8 @@ export class Html2MarkdownPreviewer {
                 await this.showInNewEditor(md);
             }
         } catch (err) {
-            log(JSON.stringify(err));
+            const e = err as Error;
+            log(`name: ${e.name} ||| message: ${e.message} ||| ${e.stack}`);
         }
     }
 
