@@ -1,23 +1,29 @@
 {
-  "name": "html-to-markdown",
+	"name": "html-to-markdown",
 	"displayName": "HTML to Markdown",
 	"description": "Convert HTML snippet to markdown",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"author": {
+		"name": "Yangtang Wu",
+		"email": "wuyangtang@live.com",
+		"url": "https://www.wtango.com"
+	},
+	"publisher": "Yangtang Wu",
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.0.0"
 	},
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:html-to-markdown.helloWorld"
+		"onCommand:html-to-markdown.html2markdown"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "html-to-markdown.helloWorld",
-				"title": "Hello World"
+				"command": "html-to-markdown.html2markdown",
+				"title": "HTML to Markdown"
 			}
 		]
 	},
@@ -33,19 +39,23 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.60.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.2.2",
 		"@types/node": "14.x",
-		"eslint": "^7.27.0",
+		"@types/turndown": "^5.0.1",
+		"@types/vscode": "^1.60.0",
 		"@typescript-eslint/eslint-plugin": "^4.26.0",
 		"@typescript-eslint/parser": "^4.26.0",
+		"eslint": "^7.27.0",
 		"glob": "^7.1.7",
 		"mocha": "^8.4.0",
+		"ts-loader": "^9.2.2",
 		"typescript": "^4.3.2",
 		"vscode-test": "^1.5.2",
-		"ts-loader": "^9.2.2",
 		"webpack": "^5.38.1",
 		"webpack-cli": "^4.7.0"
+	},
+	"dependencies": {
+		"turndown": "^7.1.1"
 	}
 }
