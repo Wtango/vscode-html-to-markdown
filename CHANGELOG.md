@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.5]
+- Add repository URL
+
 ## [1.0.4]
 - Do not use production mode to build extendsion when package, when I use production mode to compile it, it will raise error: message: Right-hand side of 'instanceof' is not an object, see this [issue](https://github.com/fgnass/domino/issues/146)
 

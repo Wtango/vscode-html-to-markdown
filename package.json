@@ -2,18 +2,28 @@
 	"name": "html-to-markdown",
 	"displayName": "HTML to Markdown",
 	"description": "Convert HTML snippet to markdown",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"author": {
 		"name": "Yangtang Wu",
 		"email": "wuyangtang@live.com",
 		"url": "https://www.wtango.com"
 	},
 	"publisher": "YangtangWu",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Wtango/vscode-html-to-markdown"
+	},
 	"engines": {
 		"vscode": "^1.60.0"
 	},
 	"categories": [
 		"Other"
+	],
+	"keywords": [
+		"HTML",
+		"Markdown",
+		"Convert",
+		"to"
 	],
 	"activationEvents": [
 		"onCommand:html-to-markdown.html2markdown"
