@@ -1,5 +1,8 @@
 # Change Log
 
+## [1.0.6]
+- Add logo
+
 ## [1.0.5]
 - Add repository URL
 

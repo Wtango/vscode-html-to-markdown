@@ -2,7 +2,7 @@
 	"name": "html-to-markdown",
 	"displayName": "HTML to Markdown",
 	"description": "Convert HTML snippet to markdown",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"author": {
 		"name": "Yangtang Wu",
 		"email": "wuyangtang@live.com",
@@ -29,6 +29,7 @@
 		"onCommand:html-to-markdown.html2markdown"
 	],
 	"main": "./dist/extension.js",
+	"icon": "images/logo.png",
 	"contributes": {
 		"commands": [
 			{
