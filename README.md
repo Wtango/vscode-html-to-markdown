@@ -16,6 +16,10 @@ Press `F1` or `Ctrl + Shift + p` or `Cmd + Shift + p`(macOS) to open command pal
 
 ## Release Notes
 
+### 1.1.0
+
+Supports generate MD for current selected text inline
+
 ### 1.0.0
 
 Initial release of HTML to Markdown extendsion

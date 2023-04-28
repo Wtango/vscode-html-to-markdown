@@ -15,7 +15,6 @@ export class Html2MarkdownPreviewer {
         log('Html2MarkdownPreviewer is created.');
     }
 
-    // public async showPreviewer(): Promise<void> {
     public async showPreviewer() {
         try {
             const textEditor = vscode.window.activeTextEditor;
